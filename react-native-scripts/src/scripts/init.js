@@ -8,14 +8,27 @@ import spawn from 'cross-spawn';
 
 // UPDATE DEPENDENCY VERSIONS HERE
 const DEFAULT_DEPENDENCIES = {
+  "@exponent/vector-icons": "~4.0.0",
+  "eslint-config-rallycoding": "^3.2.0",
   "exponent": "14.0.0",
+  "firebase": "^3.6.9",
+  "lodash": "^4.17.4",
+  "native-base": "^2.0.7",
   "react": "~15.4.0",
-  "react-native": "0.41.2"
+  "react-native": "0.41.2",
+  "react-native-router-flux": "^3.37.0",
+  "react-native-vector-icons": "^4.0.0",
+  "react-redux": "^5.0.2",
+  "redux": "^3.6.0",
+  "redux-thunk": "^2.2.0",
 };
 
 // TODO figure out how this interacts with ejection
 const DEFAULT_DEV_DEPENDENCIES = {
   "jest-exponent": "^0.2.0",
+  "babel-plugin-module-resolver": "^2.5.0",
+  "eslint-import-resolver-babel-module": "^3.0.0",
+  "eslint-plugin-import": "^2.2.0"
 };
 
 module.exports = async (appPath: string, appName: string, verbose: boolean) => {

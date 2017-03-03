@@ -202,7 +202,23 @@ async function checkNodeVersion(packageName: string): Promise<void> {
 }
 
 function checkAppName(appName: string, packageName: string): void {
-  const allDependencies = ['react-native-scripts', 'exponent', 'vector-icons', 'react', 'react-native'];
+  const allDependencies = [
+    '@exponent/vector-icons',
+    'eslint-config-rallycoding',
+    'exponent',
+    'firebase',
+    'lodash',
+    'native-base',
+    'react', 
+    'react-native',
+    'react-native-scripts',
+    'react-native-router-flux',
+    'react-native-vector-icons',
+    'react-redux',
+    'redux',
+    'redux-thunk',
+    'vector-icons'
+  ];
 
   if (allDependencies.indexOf(appName) >= 0) {
     console.error(
